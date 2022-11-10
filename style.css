@@ -1,12 +1,484 @@
-.jumbotron {
-  padding-top: 6rem;
-  background-color: rgb(75, 163, 151);
-}
-
-#gallery {
-  background-color: rgb(75, 163, 151);
+.body {
+  font-family: "Poppins", sans-serif;
 }
 
 section {
   padding-top: 5rem;
+}
+
+.navbar {
+  background-color: #0000004f;
+  /* opacity: 0.5; */
+}
+
+.nav-item {
+  opacity: 1;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+  color: black;
+}
+
+.navbar-brand {
+  font-size: 18px;
+}
+
+.nav-link.active {
+  font-weight: 700;
+}
+
+/* Beranda */
+#beranda {
+  background: linear-gradient(150deg, #cdf5e8, #40e0ab);
+}
+
+.beranda-tagline h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+}
+
+.beranda-tagline p {
+  font-size: 22px;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  line-height: 30px;
+  width: 93%;
+  text-align: justify;
+}
+
+/* Internet */
+#section-internet {
+  background: rgb(99, 230, 212);
+}
+
+.internet-tagline h1 {
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.internet-tagline p {
+  font-size: 20px;
+  margin-bottom: 60px;
+  margin-top: 10px;
+  line-height: 45px;
+  text-align: justify;
+}
+
+/* Pengertian */
+#section-pengertian {
+  background: #ffb6c1;
+  padding: 0px 0px 0px;
+  margin-top: -120px;
+}
+
+.pengertian .pengertian-tagline h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.pengertian .pengertian-tagline p {
+  font-size: 20px;
+  line-height: 40px;
+  text-align: justify;
+}
+
+.pengertian button {
+  background: rgb(225, 225, 225);
+  margin-top: 40px;
+  padding: 3px 15px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.pengertian button:hover {
+  background-color: rgb(155, 155, 155);
+}
+
+.pengertian .pengertian-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+  opacity: 0;
+  transform: translate(0, 80px);
+  transition: 1s;
+}
+
+.pengertian .pengertian-item.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.pengertian .pengertian-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.pengertian .pengertian-item p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.pengertian .pengertian-item:last-child {
+  padding-bottom: 0;
+}
+
+.pengertian .pengertian-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+/* Manfaat */
+#section-manfaat {
+  background: rgb(99, 230, 212);
+  padding: 0px 0px 0px;
+  margin-top: -120px;
+}
+
+.manfaat .manfaat-tagline h1 {
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.manfaat .manfaat-tagline p {
+  font-size: 20px;
+  line-height: 40px;
+  text-align: justify;
+}
+
+.manfaat .manfaat-item p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.manfaat button {
+  background: rgb(225, 225, 225);
+  margin-top: 40px;
+  padding: 3px 15px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.manfaat button:hover {
+  background-color: rgb(155, 155, 155);
+}
+
+.manfaat .manfaat-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+  opacity: 0;
+  transform: translate(0, 80px);
+  transition: 1s;
+}
+
+.manfaat .manfaat-item.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.manfaat .manfaat-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.manfaat .manfaat-item:last-child {
+  padding-bottom: 0;
+}
+
+.manfaat .manfaat-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+/* Dampak */
+#section-dampak {
+  background: #ffb6c1;
+  padding: 0px 0px 0px;
+  margin-top: -120px;
+}
+
+.dampak .dampak-tagline h1 {
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.dampak .dampak-tagline p {
+  font-size: 20px;
+  line-height: 40px;
+  text-align: justify;
+}
+
+.dampak .dampak-item p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.dampak button {
+  background: rgb(225, 225, 225);
+  margin-top: 40px;
+  padding: 3px 15px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.dampak button:hover {
+  background-color: rgb(155, 155, 155);
+}
+
+.dampak .dampak-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+  opacity: 0;
+  transform: translate(0, 80px);
+  transition: 1s;
+}
+
+.dampak .dampak-item.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.dampak .dampak-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.dampak .dampak-item:last-child {
+  padding-bottom: 0;
+}
+
+.dampak .dampak-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+/* Card Internet*/
+.card {
+  margin-top: 100px;
+  text-align: justify;
+}
+
+.card .card-text {
+  font-size: 14px;
+}
+
+/* Etika */
+#section-etika {
+  background: rgb(99, 230, 212);
+}
+
+.etika .etika-tagline h1 {
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.etika .etika-tagline p {
+  font-size: 20px;
+  /* margin-bottom: 60px; */
+  margin-top: 10px;
+  line-height: 35px;
+  text-align: justify;
+}
+
+/* Aturan Etika */
+#section-aturan {
+  background: #ffb6c1;
+  padding: 0px 0px 0px;
+}
+
+.aturan .aturan-tagline h1 {
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.aturan .aturan-tagline p {
+  font-size: 20px;
+  line-height: 40px;
+  text-align: justify;
+}
+
+.aturan .aturan-item p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.aturan .aturan-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+  opacity: 0;
+  transform: translate(0, 80px);
+  transition: 1s;
+}
+
+.aturan .aturan-item.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.aturan .aturan-item:last-child {
+  padding-bottom: 0;
+}
+
+.aturan .aturan-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+/* Pentingnya Etika */
+#section-penting {
+  background: rgb(99, 230, 212);
+}
+
+.penting .penting-tagline h1 {
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.penting .penting-tagline p {
+  font-size: 20px;
+  /* margin-bottom: 60px; */
+  margin-top: 10px;
+  line-height: 35px;
+  text-align: justify;
+}
+
+.penting .penting-item p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.penting .penting-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+  opacity: 0;
+  transform: translate(0, 80px);
+  transition: 1s;
+}
+
+.penting .penting-item.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.penting .penting-item:last-child {
+  padding-bottom: 0;
+}
+
+.penting .penting-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+/* Tentang Kami */
+#section-tentang {
+  background: linear-gradient(150deg, #cdf5e8, #40e0ab);
+}
+
+/* Card Tentang Kami */
+.tentang .mhs-item {
+  opacity: 0;
+  transform: translate(0, 80px);
+  transition: 2s;
+}
+
+.tentang .mhs-item.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Kontak Kami */
+#section-kontak {
+  background: linear-gradient(150deg, #cdf5e8, #40e0ab);
+}
+
+/* Responsive Hp */
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .position-absolute {
+    width: 200px;
+  }
+
+  #section-pengertian {
+    background: #ffb6c1;
+    padding: 0px 0px 0px;
+    margin-top: -20px;
+  }
+
+  #section-manfaat {
+    background: rgb(99, 230, 212);
+    padding: 0px 0px 0px;
+    margin-top: -50px;
+  }
+
+  #section-dampak {
+    background: #ffb6c1;
+    padding: 0px 0px 0px;
+    margin-top: -50px;
+  }
 }
